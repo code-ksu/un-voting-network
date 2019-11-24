@@ -62,7 +62,7 @@ node_betweenness <- data.frame(graph_dg_betweenness = graph_dg_betweenness,
   tibble::rownames_to_column() 
 node_betweenness
 
-#Jetzt ich versuche die Communities zu identifizieren. Dies hilft mir die Zügehörigkeit
+#Jetzt versuche ich die Communities zu identifizieren. Dies hilft mir die Zügehörigkeit
 #von Staaten zu möglichen Allianzen zu interpretieren. 
 graph_simply <- simplify(graph)
 cc <- cluster_fast_greedy(graph_simply)
